@@ -7,8 +7,8 @@
 	엑셀로 만든 SLR table의 column 순서대로 symbol을 작성해주었다.
 */
 string s[36] = { "vtype", "id", "semi", "assign", "lparen", "rparen", "lbrace", "rbrace", "comma", "if", "while", "for", "else", "literal",
-		"addsub", "multdiv", "num", "float", "comp", "return", "$", "CODE", "VDECL", "ASSIGN", "FDECL", "ARG", "MOREARGS", "BLOCK", "STMT",
-		"ELSE", "RHS", "EXPR", "TERM", "FACTOR", "COND", "RETURN" };
+				"addsub", "multdiv", "num", "float", "comp", "return", "$", "CODE", "VDECL", "ASSIGN", "FDECL", "ARG", "MOREARGS", "BLOCK", 
+				"STMT",	"ELSE", "RHS", "EXPR", "TERM", "FACTOR", "COND", "RETURN" };
 /*
 정수형 배열 before :
 	reduce를 진행할 때 변경되기 전 viable prefix의 길이를 production의 순서마다 나타내줌.
@@ -20,7 +20,9 @@ int before[33] = { 0, 2, 2, 0, 3, 3, 3, 9, 3, 0, 4, 0, 2, 0, 1, 2, 8, 7, 11, 4, 
 	reduce를 진행할 때 변경될 viable prefix를 지정
 	위의 before의 index 순서와 같다
 */
-string after[33] = { "", "CODE", "CODE", "CODE", "VDECL", "VDECL", "ASSIGN", "FDECL", "ARG", "ARG", "MOREARGS", "MOREARGS", "BLOCK", "BLOCK", "STMT", "STMT", "STMT", "STMT", "STMT", "ELSE", "ELSE", "RHS", "RHS", "EXPR", "EXPR", "TERM", "TERM", "FACTOR", "FACTOR", "FACTOR", "FACTOR", "COND", "RETURN" };
+string after[33] = { "", "CODE", "CODE", "CODE", "VDECL", "VDECL", "ASSIGN", "FDECL", "ARG", "ARG", "MOREARGS", "MOREARGS",
+					"BLOCK", "BLOCK", "STMT", "STMT", "STMT", "STMT", "STMT", "ELSE", "ELSE", "RHS", "RHS", "EXPR", "EXPR",
+					"TERM", "TERM", "FACTOR", "FACTOR", "FACTOR", "FACTOR", "COND", "RETURN" };
 
 /*
 lexical analyzer 실행 후 만들어진 output(토큰 셋)을 input으로 받아 진행한다.
