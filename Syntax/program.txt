@@ -1,0 +1,12 @@
+int main (int a) {
+int b;
+if (a < b) {
+int c = a + b;
+}
+
+else {
+int d = 30;
+}
+
+return a;
+}

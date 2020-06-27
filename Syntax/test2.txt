@@ -1,0 +1,10 @@
+int main() {
+int k = 47;
+char a = "dkfmlkqe";
+while (a > 1) {
+for (i = 0; i < 12; i = i + 1) {
+kor = 4;
+}
+}
+return 0;
+}

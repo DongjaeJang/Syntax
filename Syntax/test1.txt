@@ -1,0 +1,14 @@
+int main () {
+    int a = 0;
+    int b = 8;
+    char c;
+
+    if (a < b){
+	c = 'A';        
+    }
+    else {
+        c = 'F';
+    }
+
+    return c;
+}
