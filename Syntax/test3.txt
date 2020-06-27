@@ -1,5 +1,5 @@
 int main(int a, int b) {
-    int k = 47;
+    int i = 47;
     char c = 'k';
 
     while (k > 1) {
