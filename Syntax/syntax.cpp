@@ -1,3 +1,4 @@
+#include <windows.h>
 #include "syntax.h"
 #include "table.h"
 
@@ -38,6 +39,7 @@ void syntaxAnalyzer(const string& inputFile)
 	// output 파일이 열리지 않았을 때 에러 메세지 발생
 	if (!input.is_open()) {
 		cout << "error while opening the file\n";
+		system("pause");
 		exit(0);
 	}
 	// output 파일이 열렸을 경우

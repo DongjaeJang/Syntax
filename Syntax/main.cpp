@@ -31,5 +31,7 @@ int main()
     
     syntaxAnalyzer(output);
 
+    system("pause");
+
     return 0;
 }

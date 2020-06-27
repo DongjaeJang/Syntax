@@ -1,0 +1,18 @@
+int main() {
+	int a = 0;
+	int b = 8;
+	int i;
+	char c = "abcdf";
+
+	for (i = 0; i < 10; i = i + 1)
+	{
+	    if (a < b) {
+		c = 'A';
+	    }
+	    else {
+		c = 'F';
+	    }
+	}
+	
+	return 0;
+}

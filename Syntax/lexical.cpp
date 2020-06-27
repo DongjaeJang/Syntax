@@ -1,4 +1,6 @@
+#include <windows.h>
 #include "lexical.h"
+
 /*
 TermProject01의 Lexical과 비교해 변경된 점
 1. keyword를 if, for, while, else, return 5가지로 한정
@@ -306,6 +308,7 @@ void lexicalAnalyzer(const string& inputFile)
     if (!input.is_open())
     {
         cout << "error while opening the file\n";
+        system("pause");
         exit(0);
     }
 
